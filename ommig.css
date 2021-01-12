@@ -1,0 +1,166 @@
+/*TEKST*/
+h1 {
+    font-family: ivymode, sans-serif;
+
+    font-weight: 700;
+
+    font-style: normal;
+    color: #0014FF;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: futura-pt, sans-serif;
+
+    font-weight: 700;
+
+    font-style: normal;
+    color: #000000;
+    text-align: left;
+    font-size: 1rem;
+    margin-left: 2vw;
+}
+
+p {
+    text-align: left;
+    font-family: futura-pt, sans-serif;
+
+    font-weight: 300;
+
+    font-style: normal;
+    font-size: 1.1rem;
+    margin: 4vw;
+    line-height: 6vw;
+}
+
+.overskrift {
+    margin-top: -3vw;
+    font-size: 0.9rem;
+    font-style: oblique;
+
+}
+
+.col_1 p {
+    margin-right: 1vw;
+}
+
+.col_2 p {
+    margin-right: 0vw;
+    margin-left: 0vw;
+}
+
+/*INDHOLD*/
+#section_1,
+#section_2 {
+    justify-content: center;
+    display: flex;
+    margin: 2vw;
+}
+
+footer p {
+    margin-top: 9vw;
+    font-size: 1rem;
+    font-family: futura-pt, sans-serif;
+
+    font-weight: 300;
+
+    font-style: normal;
+}
+
+.section_container {
+    width: 90vw;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cv_container {
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+}
+
+/*Billeder*/
+.section_container img {
+    margin-top: 2vw;
+}
+
+.col1_1 img {
+    width: 80%;
+}
+
+
+@media (min-width:600px) {
+
+    /*    TEKST*/
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    #section_1 p {
+        font-size: 1.1rem;
+        margin-left: 0vw;
+        margin-right: 12vw;
+        margin-top: 2vw;
+        line-height: 3vw;
+
+    }
+
+    #section_2 p {
+        margin: 1vw;
+        line-height: 2vw;
+
+    }
+
+    .col_2 p {
+        margin-right: 0vw;
+        margin-left: 10vw;
+    }
+
+    .overskrift {
+        margin-top: 0vw;
+        font-size: 0.9rem;
+
+    }
+
+    /*    INDHOLD*/
+
+    /*Flex og grid*/
+    .section1_item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*    Billeder*/
+    .section_container img {
+        width: 70%;
+        margin: 2vw;
+    }
+
+
+}
+
+@media (min-width:800px) {
+    #section_1 p {
+        font-size: 1.1rem;
+        margin-left: 0vw;
+        margin-right: 12vw;
+        margin-top: 2vw;
+        line-height: 2vw;
+
+    }
+
+    #section_2 p {
+        margin: 1vw;
+        line-height: 1vw;
+
+    }
+}

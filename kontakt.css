@@ -1,0 +1,141 @@
+/*TEKST*/
+h1 {
+    font-family: ivymode, sans-serif;
+
+    font-weight: 700;
+
+    font-style: normal;
+    color: #0014FF;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: futura-pt, sans-serif;
+
+    font-weight: 700;
+
+    font-style: normal;
+    color: #000000;
+    text-align: left;
+    font-size: 1rem;
+}
+
+p {
+    text-align: left;
+    text-align: left;
+    font-family: futura-pt, sans-serif;
+
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+/*INDHOLD*/
+#section_1 {
+    justify-content: center;
+    display: flex;
+    margin: 2vw;
+}
+
+.section_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5vw;
+}
+
+.section {
+    width: 90vw;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.col_1,
+.col_2 {
+    width: 60vw;
+    height: 35vw;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 5vw;
+    margin-bottom: 12vw;
+}
+
+footer p {
+    margin-top: 9vw;
+    font-size: 1rem;
+    font-family: futura-pt, sans-serif;
+
+    font-weight: 300;
+
+    font-style: normal;
+}
+
+@media (min-width:600px) {
+
+    /*    TEKST*/
+    h1 {
+        font-size: 1.8rem;
+
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    /*    INDHOLD */
+    .section {
+        width: 90vw;
+        background: rgba(255, 255, 255, 0.6);
+        text-align: center;
+    }
+
+    .col_1,
+    .col_2 {
+        width: 38vw;
+        height: 22vw;
+        background: rgba(255, 255, 255, 0.6);
+        text-align: center;
+        padding: 1vw;
+        margin-bottom: 12vw;
+        place-self: center;
+        margin-top: 10vw;
+    }
+
+    /*Flex og grid*/
+    .section_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 5vw;
+    }
+}
+
+@media (min-width:800px) {
+
+    .col_1,
+    .col_2 {
+        width: 30vw;
+        height: 16vw;
+        background: rgba(255, 255, 255, 0.6);
+        text-align: center;
+        padding: 1vw;
+        margin-bottom: 12vw;
+        place-self: center;
+        margin-top: 10vw;
+
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}

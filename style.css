@@ -1,0 +1,49 @@
+/*INDHOLD*/
+.forside {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 44vw;
+    font-size: 2rem;
+    text-align: center;
+    color: #0014FF;
+    margin: 5vw;
+}
+
+.forside a {
+    font-family: ivymode, sans-serif;
+
+    font-weight: 700;
+
+    font-style: normal;
+}
+
+/*BAGGRUND*/
+video {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (min-width:600px) {
+
+    /*INDHOLD*/
+    .forside {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10vw;
+        font-size: 4rem;
+        font-family: helvetica, bold, sans-serif;
+        text-align: center;
+        color: #0014FF;
+        margin: 5vw;
+        margin-top: 9vw;
+    }
+
+
+}

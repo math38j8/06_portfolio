@@ -1,0 +1,253 @@
+/*TEKST*/
+h1 {
+    font-family: ivymode, sans-serif;
+
+    font-weight: 700;
+
+    font-style: normal;
+    color: #0014FF;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: futura-pt, sans-serif;
+
+    font-weight: 700;
+
+    font-style: normal;
+    color: #000000;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-family: futura-pt, sans-serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+    color: #000000;
+    text-align: center;
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 4vw;
+
+}
+
+p {
+    text-align: left;
+    font-family: futura-pt, sans-serif;
+
+    font-weight: 300;
+
+    font-style: normal;
+    font-size: 1.2rem;
+    margin: 4vw;
+    line-height: 7vw;
+}
+
+/*LINKS*/
+.kolonner a {
+    text-align: left;
+    text-align: left;
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin: 0;
+    line-height: 1.5vw;
+}
+
+.section_container a:link,
+.section_container a:visited {
+    color: black;
+}
+
+
+/*INDHOLD*/
+/*Pil tilbage*/
+.tilbage {
+    width: 30px;
+    position: absolute;
+    top: 12vw;
+    left: 45vw;
+    z-index: 1;
+}
+
+#section_1,
+#section_2 {
+    justify-content: center;
+    display: flex;
+    margin: 2vw;
+}
+
+.section_container {
+    width: 90vw;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: left;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.section_container img {
+    width: 95%;
+    margin-top: 2vw;
+}
+
+.linktil img {
+    width: 31vw;
+    margin-left: 3vw;
+}
+
+footer img {
+    width: 10vw;
+}
+
+.tiltoppen {
+    position: relative;
+    bottom: 5vw;
+    left: 6vw;
+}
+
+
+/*VIDEO */
+video {
+    width: 80%;
+}
+
+@media (min-width:600px) {
+
+    /*    TEKST*/
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        margin: 1vw;
+    }
+
+    .proces h2 {
+        margin-bottom: 0.5vw;
+    }
+
+    .section_items p,
+    .kolonner p,
+    .kolonner_2 p {
+        text-align: left;
+        text-align: left;
+        font-family: futura-pt, sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        margin: 1vw;
+        line-height: 3vw;
+    }
+
+    .kolonner a {
+        text-align: left;
+        text-align: left;
+        font-family: futura-pt, sans-serif;
+        font-weight: 300;
+        font-size: 0.8rem;
+        margin: 0;
+        line-height: 1.5vw;
+    }
+
+    /*    INDHOLD*/
+    /*Pil tilbage*/
+    .tilbage {
+        position: absolute;
+        top: 4.5vw;
+        left: 1vw;
+        z-index: 3;
+    }
+
+    /*    Billeder*/
+    .section_container img {
+        width: 78%;
+    }
+
+    .section_items img {
+        width: 100%;
+    }
+
+    .linktil img {
+        width: 13vw;
+        margin-left: 1vw;
+        margin-top: 1vw;
+    }
+
+    /*Flex og grid*/
+    .kolonner {
+        font-size: 0.9rem;
+        margin: 1vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 13vw;
+        margin-right: 9.2vw;
+    }
+
+    .kolonner_2 {
+        font-size: 0.9rem;
+        margin: 1vw;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        margin-left: 13vw;
+        margin-right: 9.2vw;
+    }
+
+    .section_items {
+        font-size: 0.9rem;
+        margin: 1vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 13.5vw;
+        margin-right: 13.5vw;
+    }
+
+    .proces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        margin-left: 13.5vw;
+        margin-right: 13.5vw;
+        justify-items: center;
+        gap: 1vw;
+        margin-bottom: 4vw;
+    }
+
+    footer img {
+        width: 3vw;
+    }
+
+    .tiltoppen {
+        position: relative;
+        bottom: 5vw;
+        left: 6vw;
+    }
+
+}
+
+@media (min-width:800px) {
+
+    .section_items p,
+    .kolonner p,
+    .kolonner_2 p {
+        text-align: left;
+        text-align: left;
+        font-family: futura-pt, sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        margin: 1vw;
+        line-height: 2vw;
+    }
+}

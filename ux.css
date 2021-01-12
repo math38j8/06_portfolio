@@ -1,0 +1,368 @@
+/*TEKST*/
+h1 {
+    font-family: ivymode, sans-serif;
+
+    font-weight: 700;
+
+    font-style: normal;
+    color: #0014FF;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: futura-pt, sans-serif;
+
+    font-weight: 700;
+
+    font-style: normal;
+    color: #000000;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-family: futura-pt, sans-serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+    color: #000000;
+    text-align: center;
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 4vw;
+
+}
+
+p {
+    text-align: left;
+    font-family: futura-pt, sans-serif;
+
+    font-weight: 300;
+
+    font-style: normal;
+    font-size: 1.2rem;
+    margin: 4vw;
+    line-height: 7vw;
+}
+
+/*LINKS*/
+.kolonner a,
+.kolonner_1 a {
+    text-align: left;
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5vw;
+}
+
+.section_container a:link,
+.section_container a:visited {
+    color: black;
+}
+
+/*INDHOLD*/
+/*Pil tilbage*/
+.tilbage {
+    width: 30px;
+    position: absolute;
+    top: 12vw;
+    left: 45vw;
+    z-index: 1;
+}
+
+#section_1,
+#section_2 {
+    justify-content: center;
+    display: flex;
+    margin: 2vw;
+}
+
+.section_container {
+    width: 90vw;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_container img {
+    width: 90%;
+    margin-top: 2vw;
+}
+
+.linktil img {
+    width: 32vw;
+    margin-right: 50vw;
+    margin-bottom: 2vw;
+}
+
+footer img {
+    width: 10vw;
+}
+
+.tiltoppen {
+    position: relative;
+    bottom: 5vw;
+    left: 6vw;
+}
+
+
+/*VIDEO*/
+video {
+    width: 80%;
+}
+
+/*SLIDESHOW*/
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media (min-width:600px) {
+
+    /*    TEKST*/
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        margin: 1vw;
+    }
+
+
+
+    .proces h2 {
+        margin-bottom: 0.5vw;
+    }
+
+    .section_items p,
+    .kolonner p,
+    .kolonner_1 p {
+        text-align: left;
+        font-family: futura-pt, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.2rem;
+        margin: 1vw;
+        line-height: 3vw;
+    }
+
+    /*    INDHOLD*/
+    /*Pil tilbage*/
+    .tilbage {
+        position: absolute;
+        top: 4.5vw;
+        left: 1vw;
+        z-index: 3;
+    }
+
+    /*    Billeder*/
+    .section_container img {
+        width: 95%;
+    }
+
+    .section_items img {
+        width: 100%;
+    }
+
+    .mindre_billede img {
+        width: 73%;
+    }
+
+    .linktil img {
+        width: 13vw;
+        margin-right: 19vw;
+        margin-top: 1vw;
+    }
+
+
+    /*Flex og grid*/
+    .kolonner {
+        font-size: 0.9rem;
+        margin: 1vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 13vw;
+        margin-right: 9.2vw;
+    }
+
+    .kolonner_1 {
+        font-size: 0.9rem;
+        margin: 1vw;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        margin-left: 13vw;
+        margin-right: 9.2vw;
+    }
+
+    .section_items {
+        font-size: 0.9rem;
+        margin: 1vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 13.5vw;
+        margin-right: 13.5vw;
+    }
+
+    .proces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        margin-left: 13.5vw;
+        margin-right: 13.5vw;
+        justify-items: center;
+        gap: 1vw;
+        margin-bottom: 4vw;
+    }
+
+    footer img {
+        width: 3vw;
+    }
+
+    .tiltoppen {
+        position: relative;
+        bottom: 5vw;
+        left: 6vw;
+    }
+
+}
+
+
+@media (min-width:800px) {
+
+    .section_items p,
+    .kolonner p,
+    .kolonner_1 p {
+        text-align: left;
+        font-family: futura-pt, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.2rem;
+        margin: 1vw;
+        line-height: 1.7vw;
+    }
+}

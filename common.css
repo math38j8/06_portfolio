@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*BAGGRUND */
+body {
+    background-image: url(images/phone_baggrund.png);
+    margin: 0 auto;
+    background-size: auto;
+}
+
+/*HEADER*/
+nav {
+    width: 100%;
+    height: 10vw;
+    background: rgba(255, 255, 255, 0.8);
+
+    font-family: ivymode, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    font-size: 2rem;
+    z-index: 1;
+    position: relative;
+    color: #0014FF;
+}
+
+
+
+
+/*LINKS*/
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #0014FF;
+}
+
+a:hover {
+    color: #FF00AA;
+}
+
+/*//BURGERMENU//*/
+#titel img {
+    width: 90vw;
+    position: absolute;
+    top: -0.8vw;
+    left: 10vw;
+    z-index: 2;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+#menuknap {
+    display: inline-block;
+    position: relative;
+    top: -2vw;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform 0.3s;
+    transform-origin: top left;
+
+}
+
+ul {
+    padding-left: 1vw;
+    background: white;
+    width: 45vw;
+    height: 100%;
+    margin-top: 4vw;
+}
+
+/*FOOTER*/
+.section_container {
+    margin-bottom: 5vw;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0 auto;
+    font-family: futura-pt, sans-serif;
+
+    font-weight: 300;
+
+    font-style: normal;
+}
+
+@media (min-width:600px) {
+
+    /*    BAGGRUND*/
+    body {
+        background-image: url(images/web_baggrund.png);
+        height: 100%;
+
+    }
+
+    /*     MENU*/
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 100%;
+        margin-left: 33vw;
+    }
+
+    #menu li {
+        display: inline-block;
+        margin-left: 9vw;
+        /*        margin-top: -0.6vw;
+        */
+    }
+
+    #menu {
+        margin: 0;
+    }
+
+    #titel img {
+        width: 40vw;
+        position: absolute;
+        top: -0.9vw;
+        left: -1vw;
+    }
+
+
+    ul {
+        width: 67vw;
+        background: none;
+    }
+
+    /*  HEADER*/
+
+    nav {
+        height: 3vw;
+        font-size: 0.9rem;
+
+    }
+
+    /*    INDHOLD*/
+    .section_container img {
+        width: 60%;
+    }
+
+    .section_container {
+        margin-bottom: 5vw;
+    }
+}
+
+
+@media (min-width:700px) {
+    nav {
+
+        font-size: 1.1rem;
+
+    }
+}
+
+@media (min-width:900px) {
+    nav {
+
+        font-size: 1.4rem;
+
+    }
+}
+
+@media (min-width:1000px) {
+    nav {
+
+        font-size: 1.6rem;
+
+    }
+}
+
+@media (min-width:1200px) {
+    nav {
+
+        font-size: 1.8rem;
+
+    }
+}
