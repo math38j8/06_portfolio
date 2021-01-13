@@ -38,7 +38,6 @@ video {
         grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 10vw;
         font-size: 4rem;
-        font-family: helvetica, bold, sans-serif;
         text-align: center;
         color: #0014FF;
         margin: 5vw;
